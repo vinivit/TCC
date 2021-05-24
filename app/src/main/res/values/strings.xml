@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Automation</string>
+    <string name="caixadagua">1</string>
+    <string name="caixa_d_gua_inteligente">Caixa-d\'água Inteligente</string>
+    <string name="n_vel">Nível: %</string>
+    <string name="v_lvula_entrada">Válvula Entrada:</string>
+
+
+</resources>
+
