@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    tools:context=".Caixa1">
+    tools:context=".Caixa2">
 
     <LinearLayout
 
@@ -15,25 +15,24 @@
         android:orientation="vertical">
 
         <RelativeLayout
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="40dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="20dp">
+            >
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="20dp"
+                android:gravity="center"
                 android:textColor="@color/black"
                 android:textSize="30sp"
-                android:gravity = "center"
-                android:text="Caixa-d'água 1"/>
+                android:onClick="solicitarStatusCx2"
+                android:text="Caixa-d'água 2"/>
 
         </RelativeLayout>
 
         <GridLayout
+            android:layout_marginTop="40dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:rowCount="3"
@@ -58,7 +57,7 @@
                     android:orientation="vertical">
 
                     <ProgressBar
-                        android:id="@+id/progress_bar"
+                        android:id="@+id/progress_bar2"
                         style="@style/CircularDeterminateProgressBar"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
@@ -67,7 +66,7 @@
 
 
                     <TextView
-                        android:id="@+id/statusAgua"
+                        android:id="@+id/statusAgua2"
                         android:layout_marginTop="12dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -111,7 +110,7 @@
                         />
 
                     <TextView
-                        android:id="@+id/statusFluxo"
+                        android:id="@+id/statusFluxo2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
@@ -133,6 +132,7 @@
             android:columnOrderPreserved="false">
 
             <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -153,92 +153,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
                         android:textSize="30sp"
-                        android:text="válvula entrada"/>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:padding="16dp"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/sinalizacao1"
-
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-
-
-                            android:background="@drawable/circulo"
-                            />
-
-                        <Button
-                            android:id="@+id/button1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@color/Frenchblue"
-                            android:onClick="ligar"
-                            android:text=" liga"
-                            android:textSize="15sp"
-                            android:layout_marginStart="10dp"
-                            app:backgroundTint="@null"
-                            tools:ignore="MissingConstraints"
-                            />
-
-                        <Button
-                            android:id="@+id/button2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@color/Frenchblue"
-                            android:onClick="desligar"
-                            android:text=" desliga"
-                            android:textSize="15sp"
-                            android:layout_marginStart="10dp"
-                            app:backgroundTint="@null"
-                            tools:ignore="MissingConstraints"
-                            />
-
-                    </LinearLayout>
-
-
-
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-        </GridLayout>
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:rowCount="3"
-            android:columnCount="1"
-            android:alignmentMode="alignMargins"
-            android:columnOrderPreserved="false">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:textSize="30sp"
-                        android:text="válvula saída"/>
+                        android:text="válvula"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -258,7 +173,7 @@
                             />
 
                         <Button
-                            android:id="@+id/button3"
+                            android:id="@+id/button1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@color/Frenchblue"
@@ -271,7 +186,7 @@
                             />
 
                         <Button
-                            android:id="@+id/button4"
+                            android:id="@+id/button2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@color/Frenchblue"
@@ -294,6 +209,8 @@
 
         </GridLayout>
 
+
+
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -303,6 +220,7 @@
             android:columnOrderPreserved="false">
 
             <androidx.cardview.widget.CardView
+                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -319,7 +237,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/nivelSeekBar"
+                        android:id="@+id/nivelSeekBar2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
@@ -327,7 +245,7 @@
                         android:text=" definir nível - %"/>
 
                     <SeekBar
-                        android:id="@+id/seekBar"
+                        android:id="@+id/seekBar2"
                         android:max="100"
                         android:progress="50"
                         android:layout_width="match_parent"
@@ -338,74 +256,6 @@
 
 
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-        </GridLayout>
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:rowCount="3"
-            android:columnCount="1"
-            android:alignmentMode="alignMargins"
-            android:columnOrderPreserved="false">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="vertical">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:padding="16dp"
-                    android:orientation="horizontal">
-
-
-
-                    <Button
-                        android:id="@+id/buttonConfiguracao"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@color/Frenchblue"
-                        android:onClick="configuracaoCaixa1"
-                        android:text="configuração"
-                        android:textSize="15sp"
-                        android:layout_marginStart="5dp"
-                        app:backgroundTint="@null"
-                        tools:ignore="MissingConstraints"
-                        />
-
-                    <Button
-                        android:id="@+id/buttonVoltar"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@color/Frenchblue"
-                        android:onClick="voltar"
-                        android:text=" voltar"
-                        android:textSize="15sp"
-                        android:layout_marginStart="5dp"
-                        app:backgroundTint="@null"
-                        tools:ignore="MissingConstraints,OnClick"
-                        />
-
-                </LinearLayout>
-                </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
 

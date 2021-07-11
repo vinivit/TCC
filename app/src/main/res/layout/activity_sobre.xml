@@ -11,12 +11,13 @@
     tools:context=".Caixa1">
 
     <LinearLayout
-
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <GridLayout
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:rowCount="3"
@@ -25,6 +26,7 @@
             android:columnOrderPreserved="false">
 
             <androidx.cardview.widget.CardView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -58,7 +60,7 @@
                         android:textSize="25sp"
                         android:gravity = "center"
                         android:text=" Sistema Inteligente de Monitoramento de
-Caixas-d’água \n"/>
+Caixas-d’água. \n"/>
 
                     <TextView
 
@@ -68,7 +70,7 @@ Caixas-d’água \n"/>
                         android:textSize="25sp"
                         android:gravity = "center"
                         android:text=" Integrantes:\n Ismael Barcelos Negreiros,\n Sabrina Heloisa da Silva,\n Vinicius Vitor da
-Silva \n"/>
+Silva. \n"/>
 
                     <TextView
 
@@ -77,7 +79,7 @@ Silva \n"/>
                         android:textColor="@color/black"
                         android:textSize="25sp"
                         android:gravity = "center"
-                        android:text=" Orientador: \n Eliezer Miranda Coelho"/>
+                        android:text=" Orientador: \n Eliezer Miranda Coelho."/>
 
 
 

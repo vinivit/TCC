@@ -4,7 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConfiguracaoCaixa1">
+    tools:context=".ConfiguracaoCaixa">
+
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:text="Configuração"/>
+
+    </RelativeLayout>
 
 
     <LinearLayout
@@ -20,25 +38,46 @@
 
 
         <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tempo Nível"
+            android:text="Nível - atualizaçao"
 
             />
         <EditText
             android:id="@+id/tNivel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:ems="20"
+            android:hint="Ex: 3 (segundos)"/>
+
         <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tempo Fluxo"/>
+            android:text="Fluxo - atualizaçao"/>
         <EditText
             android:id="@+id/tFluxo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="number"
+            android:ems="5"
+            android:hint="Ex: 5 (segundos)"/>
+
+        <TextView
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fluxo - notificação "/>
+        <EditText
+            android:id="@+id/nFluxo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="5"
+            android:hint="Ex: 7 (L/s)"/>
+
         <Button
             android:id="@+id/tBotao"
             android:layout_width="wrap_content"
@@ -51,17 +90,6 @@
             tools:ignore="MissingConstraints"
             android:textSize="15sp"
             android:layout_margin="10dp"/>
-        <Button
-            android:id="@+id/tBotao2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Voltar"
-            android:onClick="voltar"
-            android:background="@color/Frenchblue"
-            app:backgroundTint="@null"
-            tools:ignore="MissingConstraints"
-            android:textSize="15sp"
-            android:layout_margin="10dp"/>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,23 +5,29 @@
     <application
         android:name=".NotificationApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/ic_launcher_caixa"
+        android:label="@string/caixa_d_gua_inteligente"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_caixa_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Automation">
-        <activity android:name=".Sobre"
-            android:parentActivityName=".TelaInicial">
-        </activity>
-        <activity android:name=".ConfiguracaoCaixa1"/>
 
-
-
-        <activity android:name=".Caixa1" />
-        <activity android:name=".TelaInicial" android:noHistory="true" android:launchMode="singleTop">
-
-
-
+        <activity
+            android:name=".Caixa2"
+            android:parentActivityName=".TelaInicial" />
+        <activity
+            android:name=".Sobre"
+            android:parentActivityName=".TelaInicial" />
+        <activity
+            android:name=".ConfiguracaoCaixa"
+            android:parentActivityName=".TelaInicial" />
+        <activity
+            android:name=".Caixa1"
+            android:parentActivityName=".TelaInicial" />
+        <activity
+            android:name=".TelaInicial"
+            android:launchMode="singleTop"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,23 +36,13 @@
         </activity>
 
         <service android:name="org.eclipse.paho.android.service.MqttService" />
-
-
-
     </application>
-    <uses-permission android:name="android.permission.VIBRATE" />
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
-
-
-
-
-
-
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 </manifest>
