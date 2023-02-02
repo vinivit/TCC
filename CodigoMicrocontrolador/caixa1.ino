@@ -25,14 +25,14 @@
 // ---  Configuração WIFI/MQTT ---
 
 // WIFI
-const char* ssidWifi = "SHS-2.4G"; 
-const char* passwordWifi =  "@sabrin@!";
+const char* ssidWifi = "aaaaaaaa"; 
+const char* passwordWifi =  "aaaaaaaaaaa";
 
 //MQTT
 const char* mqttServer = "soldier.cloudmqtt.com"; 
-const int   mqttPort = 10659; 
-const char* mqttUser = "ymnrzrfj"; 
-const char* mqttPassword = "FUlEq42bto_-"; 
+const int   mqttPort = 00000; 
+const char* mqttUser = "aaaaaaaa"; 
+const char* mqttPassword = "aaaaaaaaaa"; 
 const char* mqttId = "dispositivo1"; 
 
 //Variáveis e objetos globais
