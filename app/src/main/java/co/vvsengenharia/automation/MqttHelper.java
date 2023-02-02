@@ -13,10 +13,10 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 public class MqttHelper {
     public MqttAndroidClient mqttAndroidClient;
-    final String serverUri = "tcp://soldier.cloudmqtt.com:10659";
+    final String serverUri = "tcp://soldier.cloudmqtt.com:00000";
     final String clientId = "ExampleAndroidClient";
-    final String username = "ymnrzrfj";
-    final String password = "FUlEq42bto_-";
+    final String username = "aaaaaaa";
+    final String password = "aaaaaaa";
 
     // Tópicos MQTT
     public final String recebeStatusNivel = "CAIXA/STATUS/NIVEL", recebeStatusFluxo = "CAIXA/STATUS/FLUXO";
